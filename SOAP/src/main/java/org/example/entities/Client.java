@@ -1,34 +1,26 @@
 package org.example.entities;
 
+
 import jakarta.persistence.*;
+import java.io.Serializable;
 
 @Entity
-@Table(name = "clients")
-public class Client {
-
+public class Client implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
-    @Column(name = "nom")
     private String nom;
-
-    @Column(name = "prenom")
     private String prenom;
-
-    @Column(name = "email")
     private String email;
-
-    @Column(name = "telephone")
     private String telephone;
 
-    // Getters and Setters
-
-    public int getId() {
+    // Getters et Setters
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -64,3 +56,5 @@ public class Client {
         this.telephone = telephone;
     }
 }
+
+

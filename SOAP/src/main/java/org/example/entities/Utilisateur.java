@@ -1,48 +1,33 @@
 package org.example.entities;
 
+
 import jakarta.persistence.*;
+import java.io.Serializable;
 
 @Entity
-@Table(name = "utilisateurs")
-public class Utilisateur {
-
+public class Utilisateur implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
-    @Column(name = "nom_utilisateur", nullable = false, unique = true)
-    private String nomUtilisateur;
+    private String nom;
+    private String role;
 
-    @Column(name = "mot_de_passe", nullable = false)
-    private String motDePasse;
-
-    @Column(name = "role", nullable = false)
-    private String role; // Example: "USER", "ADMIN"
-
-    // Getters and Setters
-
-    public int getId() {
+    // Getters et Setters
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getNomUtilisateur() {
-        return nomUtilisateur;
+    public String getNom() {
+        return nom;
     }
 
-    public void setNomUtilisateur(String nomUtilisateur) {
-        this.nomUtilisateur = nomUtilisateur;
-    }
-
-    public String getMotDePasse() {
-        return motDePasse;
-    }
-
-    public void setMotDePasse(String motDePasse) {
-        this.motDePasse = motDePasse;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     public String getRole() {
@@ -53,3 +38,5 @@ public class Utilisateur {
         this.role = role;
     }
 }
+
+

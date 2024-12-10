@@ -1,31 +1,24 @@
 package org.example.entities;
 
 import jakarta.persistence.*;
+import java.io.Serializable;
 
 @Entity
-@Table(name = "chambres")
-public class Chambre {
-
+public class Chambre implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
-    @Column(name = "type")
     private String type;
+    private String description;
+    private Double prix;
 
-    @Column(name = "prix")
-    private double prix;
-
-    @Column(name = "disponible")
-    private boolean disponible;
-
-    // Getters and Setters
-
-    public int getId() {
+    // Getters et Setters
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -37,19 +30,21 @@ public class Chambre {
         this.type = type;
     }
 
-    public double getPrix() {
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Double getPrix() {
         return prix;
     }
 
-    public void setPrix(double prix) {
+    public void setPrix(Double prix) {
         this.prix = prix;
     }
-
-    public boolean isDisponible() {
-        return disponible;
-    }
-
-    public void setDisponible(boolean disponible) {
-        this.disponible = disponible;
-    }
 }
+
+

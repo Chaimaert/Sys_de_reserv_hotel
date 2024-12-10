@@ -1,24 +1,24 @@
 package org.example.services;
 
+import org.example.entities.Reservation;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
-import org.example.entities.Chambre;
-import org.example.entities.Client;
-import org.example.entities.Reservation;
+import java.util.List;
 
 @WebService
 public interface ReservationService {
+    @WebMethod
+    Reservation creerReservation(Reservation reservation);
 
     @WebMethod
-    String createReservation(Client client, Chambre chambre, String dateDebut, String dateFin, String preferences);
+    Reservation consulterReservation(Long id);
 
     @WebMethod
-    Reservation getReservationDetails(int reservationId);
+    Reservation modifierReservation(Long id, Reservation reservation);
 
     @WebMethod
-    String updateReservation(int reservationId, Chambre chambre, String dateDebut, String dateFin, String preferences);
+    boolean supprimerReservation(Long id);
 
     @WebMethod
-    String deleteReservation(int reservationId);
+    List<Reservation> listerReservations();
 }
-

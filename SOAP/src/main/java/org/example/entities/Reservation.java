@@ -1,59 +1,34 @@
 package org.example.entities;
 
 import jakarta.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "reservations")
-public class Reservation {
-
+public class Reservation implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "client_id", referencedColumnName = "id")
-    private Client client;
-
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "chambre_id", referencedColumnName = "id")
-    private Chambre chambre;
+    private Long id;
 
     @Temporal(TemporalType.DATE)
-    @Column(name = "date_debut")
     private Date dateDebut;
 
     @Temporal(TemporalType.DATE)
-    @Column(name = "date_fin")
     private Date dateFin;
 
-    @Column(name = "preferences")
-    private String preferences;
+    @ManyToOne
+    private Chambre chambre;
 
-    // Getters and Setters
+    @ManyToOne
+    private Client client;
 
-    public int getId() {
+    // Getters et Setters
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
-    }
-
-    public Client getClient() {
-        return client;
-    }
-
-    public void setClient(Client client) {
-        this.client = client;
-    }
-
-    public Chambre getChambre() {
-        return chambre;
-    }
-
-    public void setChambre(Chambre chambre) {
-        this.chambre = chambre;
     }
 
     public Date getDateDebut() {
@@ -72,11 +47,21 @@ public class Reservation {
         this.dateFin = dateFin;
     }
 
-    public String getPreferences() {
-        return preferences;
+    public Chambre getChambre() {
+        return chambre;
     }
 
-    public void setPreferences(String preferences) {
-        this.preferences = preferences;
+    public void setChambre(Chambre chambre) {
+        this.chambre = chambre;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
     }
 }
+
+

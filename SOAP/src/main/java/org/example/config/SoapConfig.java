@@ -11,7 +11,7 @@ public class SoapConfig {
 
     @Bean
     public Endpoint reservationEndpoint(ReservationServiceImpl reservationService) {
-        String url = "http://localhost:8080/ws/ReservationService"; // Fully qualified URL
+        String url = "http://localhost:8080/ws/ReservationService"; // SOAP URL
         return Endpoint.publish(url, reservationService);
     }
 }

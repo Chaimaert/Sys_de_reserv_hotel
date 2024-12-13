@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.hotel.reservation";
+option java_outer_classname = "ReservationProto";
+
+service ReservationService {
+  rpc CreateReservation (ReservationRequest) returns (ReservationResponse);
+  rpc GetReservation (GetReservationRequest) returns (ReservationResponse);
+  rpc UpdateReservation (UpdateReservationRequest) returns (ReservationResponse);
+  rpc DeleteReservation (DeleteReservationRequest) returns (DeleteReservationResponse);
+}
+
+message ReservationRequest {
+  string customer_name = 1;
+  string check_in_date = 2;
+  string check_out_date = 3;
+  string room_type = 4;
+}
+
+message ReservationResponse {
+  string reservation_id = 1;
+  string message = 2;
+}
+
+message GetReservationRequest {
+  string reservation_id = 1;
+}
+
+message UpdateReservationRequest {
+  string reservation_id = 1;
+  string check_in_date = 2;
+  string check_out_date = 3;
+}
+
+message DeleteReservationRequest {
+  string reservation_id = 1;
+}
+
+message DeleteReservationResponse {
+  string message = 1;
+}

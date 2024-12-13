@@ -1,0 +1,16 @@
+com\hotel\reservation\ReservationServiceGrpc$ReservationServiceMethodDescriptorSupplier.class
+com\hotel\reservation\HotelReservationGrpcApplication.class
+com\hotel\reservation\ReservationServiceGrpc$ReservationServiceStub.class
+com\hotel\reservation\GrpcServer.class
+com\hotel\reservation\ReservationServiceGrpc$MethodHandlers.class
+com\hotel\reservation\ReservationServiceGrpc$ReservationServiceFileDescriptorSupplier.class
+com\hotel\reservation\ReservationServiceGrpc.class
+com\hotel\reservation\ReservationServiceGrpc$1.class
+com\hotel\reservation\ReservationServiceGrpc$ReservationServiceFutureStub.class
+com\hotel\reservation\ReservationServiceGrpc$ReservationServiceImplBase.class
+com\hotel\reservation\ReservationServiceGrpc$ReservationServiceBaseDescriptorSupplier.class
+com\hotel\reservation\ReservationServiceGrpc$ReservationServiceBlockingStub.class
+com\hotel\reservation\ReservationServiceGrpc$AsyncService.class
+com\hotel\reservation\ReservationServiceImpl.class
+com\hotel\reservation\ReservationServiceGrpc$2.class
+com\hotel\reservation\ReservationServiceGrpc$3.class

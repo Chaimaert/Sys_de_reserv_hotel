@@ -1,0 +1,17 @@
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\src\main\java\com\hotel\reservation\GrpcServer.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\src\main\java\com\hotel\reservation\HotelReservationGrpcApplication.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\src\main\java\com\hotel\reservation\ReservationServiceImpl.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\grpc-java\com\hotel\reservation\ReservationServiceGrpc.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\DeleteReservationRequest.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\DeleteReservationRequestOrBuilder.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\DeleteReservationResponse.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\DeleteReservationResponseOrBuilder.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\GetReservationRequest.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\GetReservationRequestOrBuilder.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\ReservationProto.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\ReservationRequest.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\ReservationRequestOrBuilder.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\ReservationResponse.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\ReservationResponseOrBuilder.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\UpdateReservationRequest.java
+C:\Uni\hotel-reservation-grpc\hotel-reservation-grpc\target\generated-sources\protobuf\java\com\hotel\reservation\UpdateReservationRequestOrBuilder.java
